@@ -55,16 +55,148 @@
       <li>Officia ad ipsum est amet aute ut magna Lorem officia aute cillum minim dolore.</li>
       <li>Labore consequat nostrud dolore tempor aute deserunt proident enim.</li>
       <li>Qui culpa sint ex ipsum occaecat est ut.</li>
-      <ul>
+      <ol>
         <li>Pariatur sit ad laborum qui cillum.</li>
         <li>Mollit velit aliquip dolor ad voluptate proident sint anim veniam duis officia.</li>
-      </ul>
+      </ol>
     </ol>
 
     <!--Visibilidad de los elementos-->
     <p class="hide">Algo oculto</p>
     <p class="invisible">Algo invisible</p>
     <p>Otra cosa visible</p>
+    <p class="show-for-medium">Solo me veo en pantallas medianas y grandes</p>
+    <p class="show-for-large">Solo me veo en pantallas grandes</p>
+    <p class="show-for-small-only">Solo me veo en pantallas pequeñas</p>
+    <p class="show-for-medium-only">Solo me veo en pantallas medianas</p>
+    <p class="show-for-landscape">Solo me veo en modo landscape</p>
+    <p class="show-for-portrait">Solo me veo en modo portrait</p>
+
+    <!--BOTONES-->
+    <div class="row">
+      <button class="button tiny">Botón</button>
+      <a href="#" class="button small">Enlace</a>
+      <input type="button" value="Input" class="button">
+
+      <!--BOTONES DE COLORES-->
+      <button class="success button large">Botón</button>
+      <button class="alert button expanded">Botón</button>
+      <button class="warning button expanded small">Botón</button>
+      <button class="secondary button expanded large">Botón</button>
+      <button class="button disabled">Botón</button>
+      <button class="success button hollow">Botón</button>
+      <button class="alert button hollow">Botón</button>
+      <button class="warning button hollow">Botón</button>
+      <button class="secondary button hollow">Botón</button>
+    </div>
+
+    <!--FORMULARIOS-->
+    <div class="row">
+      <form>
+        <div>
+          <label>Nombre</label>
+          <input type="text" placeholder="Juanito">
+        </div>
+        
+        <div>
+          <label>Email</label>
+          <input type="email" placeholder="algo@nose.com">
+        </div>
+        
+        <div>
+          <label>Número</label>
+          <input type="number">
+        </div>
+        
+        <div>
+          <label>Mensaje</label>
+          <textarea placeholder="Mensaje"></textarea>
+        </div>
+        
+        <div>
+          <label>Estado civil</label>
+          <select>
+            <option>Soltero</option>
+            <option>Casado</option>
+            <option>Etc</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Estado civil</label>
+          <select multiple>
+            <option>Soltero</option>
+            <option>Casado</option>
+            <option>Etc</option>
+          </select>
+        </div>
+
+        <fieldset class="fieldset">
+          <legend>Un fieldset</legend>
+          <input type="checkbox"><label>Check 1</label>
+          <input type="checkbox"><label>Check 2</label>
+          <input type="checkbox"><label>Check 3</label>
+        </fieldset>
+
+        <label for="fileUpload" class="button">Subir archivo...</label>
+        <input type="file" id="fileUpload" class="show-for-sr">
+
+        <label>Password</label>
+        <input type="password">
+        <p class="help-text">La contraseña debe tener 8 caracteres o más, por lo menos una letra mayúscula, una minúscula, un número, un símbolo, una runa, las perlas de la virgen, etc...</p>
+
+        <!--SWITCH-->
+        <div class="switch">
+          <input class="switch-input" id="miSwitch" type="checkbox" name="Ejemplo">
+          <label class="switch-paddle" for="miSwitch">
+            <span class="show-for-sr">Habilitado</span>
+          </label>
+        </div>
+
+        <!--SLIDER-->
+        <div class="slider" data-slider data-initial-start="50" data-end="200">
+          <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
+          <span class="slider-fill" data-slider-fill></span>
+          <input type="hidden">
+        </div>
+      </form>
+    </div>
+
+    <!--TABLAS-->
+    <div class="row">
+      <table class="striped hover stack">
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Edad</th>
+        </tr>
+        <tr>
+          <th>Perengano</th>
+          <th>Jimenez</th>
+          <th>34</th>
+        </tr>
+        <tr>
+          <th>Perengano</th>
+          <th>Jimenez</th>
+          <th>34</th>
+        </tr>
+        <tr>
+          <th>Perengano</th>
+          <th>Jimenez</th>
+          <th>34</th>
+        </tr>
+        <tr>
+          <th>Perengano</th>
+          <th>Jimenez</th>
+          <th>34</th>
+        </tr>
+        <tr>
+          <th>Perengano</th>
+          <th>Jimenez</th>
+          <th>34</th>
+        </tr>
+      </table>
+    </div>
 
 
     <div class="espacio"></div>
