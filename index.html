@@ -13,6 +13,31 @@
     </style>
   </head>
 <body>
+    <!--TOP BAR-->
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text">Título del sitio</li>
+          <li>
+            <a href="#">Uno</a>
+            <ul class="menu vertical">
+              <li><a href="#">Uno</a></li>
+              <li><a href="#">Dos</a></li>
+              <li><a href="#">Tres</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Dos</a></li>
+          <li><a href="#">Tres</a></li>
+        </ul>
+      </div>
+
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><input type="search" placeholder="Buscar"></li>
+          <li><button type="button" class="button">Buscar</button></li>
+        </ul>
+      </div>
+    </div>
     <!--Apariencia de texto-->
     <div class="row">
       <!--Encabezados-->
@@ -198,6 +223,254 @@
       </table>
     </div>
 
+    <!-- MENÚS -->
+    <div class="row">
+      <ul class="menu">
+        <li class="menu-text">Nombre del sitio</li>
+        <li><a href="#">Link 1</a></li>
+        <li class="active"><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+      </ul>
+
+      <ul class="menu vertical">
+        <li class="menu-text">Nombre del sitio</li>
+        <li><a href="#">Link 1</a></li>
+        <li class="active"><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+      </ul>
+
+      <ul class="menu simple">
+        <li class="menu-text">Nombre del sitio</li>
+        <li><a href="#">Link 1</a></li>
+        <li class="active"><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+      </ul>
+    </div>
+
+    <!--CALLOUTS-->
+    <div class="row">
+      <div class="callout">Occaecat cillum ea veniam non fugiat adipisicing minim ut in aliquip est.</div>
+      <div class="callout secondary">Occaecat cillum ea veniam non fugiat adipisicing minim ut in aliquip est.</div>
+      <div class="callout success">Occaecat cillum ea veniam non fugiat adipisicing minim ut in aliquip est.</div>
+      <div class="callout alert">Occaecat cillum ea veniam non fugiat adipisicing minim ut in aliquip est.</div>
+      <div class="callout warning">Occaecat cillum ea veniam non fugiat adipisicing minim ut in aliquip est.</div>
+    </div>
+
+    <!--PROGRESS BAR-->
+    <hr>
+    <div class="progress" role="progressbar">
+      <div class="progress-meter" style="width: 25%">
+        <p class="progress-meter-text">25%</p>
+      </div>
+    </div>
+
+    <div class="success progress" role="progressbar">
+      <div class="progress-meter" style="width: 40%">
+        <p class="progress-meter-text">40%</p>
+      </div>
+    </div>
+
+    <div class="alert progress" role="progressbar">
+      <div class="progress-meter" style="width: 80%">
+        <p class="progress-meter-text">80%</p>
+      </div>
+    </div>
+
+    <div class="warning progress" role="progressbar">
+      <div class="progress-meter" style="width: 60%">
+        <p class="progress-meter-text">60%</p>
+      </div>
+    </div>
+
+    <!--LABELS-->
+    <span class="secondary label">Etiqueta</span>
+    <span class="success label">Etiqueta</span>
+    <span class="alert label">Etiqueta</span>
+    <span class="warning label">Etiqueta</span>
+
+    <!--BADGES-->
+    <span class="secondary badge">2</span>
+    <span class="success badge">3</span>
+    <span class="alert badge">4</span>
+    <span class="warning badge">5</span>
+
+    <hr>
+
+    <!--BREADCRUMBS-->
+    <nav role="navigation">
+      <ul class="breadcrumbs">
+        <li><a href="#">Inicio</a></li>
+        <li class="disabled">Deshabilitado</li>
+        <li><a href="#">Blog</a></li>
+        <li>Cuenta</li>
+      </ul>
+    </nav>
+
+    <!--PÁGINAS-->
+    <ul class="pagination" role="navigation">
+      <li class="disabled">Anterior</li>
+      <li class="current">1</li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li class="ellipsis"></li>
+      <li><a href="#">51</a></li>
+      <li><a href="#">52</a></li>
+      <li><a href="#">Siguiente</a></li>
+    </ul>
+
+    <!--GRID (OBSOLETO)-->
+    <!--
+    <div class="row">
+      <div class="columns large-3 medium-3">
+        <h3>Columna</h3>
+        <p>Labore aute laboris sint dolor tempor consequat reprehenderit laborum elit commodo veniam veniam ut adipisicing. Enim ut consequat duis mollit nostrud enim. Velit eu Lorem ut deserunt minim. Duis cillum ad aute enim. Exercitation minim magna ad nostrud aliqua est amet dolore minim anim Lorem non Lorem adipisicing.</p>
+      </div>
+      <div class="columns large-3 medium-3">
+        <h3>Columna</h3>
+        <p>Labore aute laboris sint dolor tempor consequat reprehenderit laborum elit commodo veniam veniam ut adipisicing. Enim ut consequat duis mollit nostrud enim. Velit eu Lorem ut deserunt minim. Duis cillum ad aute enim. Exercitation minim magna ad nostrud aliqua est amet dolore minim anim Lorem non Lorem adipisicing.</p>
+      </div>
+      <div class="columns large-3 medium-3">
+        <h3>Columna</h3>
+        <p>Labore aute laboris sint dolor tempor consequat reprehenderit laborum elit commodo veniam veniam ut adipisicing. Enim ut consequat duis mollit nostrud enim. Velit eu Lorem ut deserunt minim. Duis cillum ad aute enim. Exercitation minim magna ad nostrud aliqua est amet dolore minim anim Lorem non Lorem adipisicing.</p>
+      </div>
+      <div class="columns large-3 medium-3">
+        <h3>Columna</h3>
+        <p>Labore aute laboris sint dolor tempor consequat reprehenderit laborum elit commodo veniam veniam ut adipisicing. Enim ut consequat duis mollit nostrud enim. Velit eu Lorem ut deserunt minim. Duis cillum ad aute enim. Exercitation minim magna ad nostrud aliqua est amet dolore minim anim Lorem non Lorem adipisicing.</p>
+      </div>
+    </div>-->
+
+    <!--XY GRID-->
+    <div class="grid-x grid-margin-x">
+      <div class="medium-6 large-4 cell">
+        <div class="demo">
+          Algo
+        </div>
+      </div>
+      <div class="medium-6 large-8 cell">
+        <div class="demo">
+          Algo
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-x grid-padding-x">
+      <div class="medium-6 large-4 cell">
+        <div class="demo">
+          Algo
+        </div>
+      </div>
+      <div class="medium-6 large-8 cell">
+        <div class="demo">
+          Algo
+        </div>
+      </div>
+    </div>
+
+    <!-- slider code -->
+
+<div class="orbit testimonial-slider-container" role="region" aria-label="testimonial-slider" data-orbit>
+  <ul class="orbit-container">
+    <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+    <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+
+    <!-- content slide 1 -->
+
+    <li class="is-active orbit-slide">
+      <div class="testimonial-slide row">
+        <div class="small-12 large-9 column">
+          <div class="row align-middle testimonial-slide-content">
+            <div class="small-12 medium-4 column hide-for-small-only profile-pic">
+              <img src="https://placeimg.com/300/300/nature">
+            </div>
+            <div class="small-12 medium-8 column testimonial-slide-text">
+              <p class="testimonial-slide-quotation">Hide when guests come over instantly break out into full speed gallop across the house for no reason mrow touch water with paw then recoil in horror.</p>
+              <div class="testimonial-slide-author-container">
+                <div class="small-profile-pic show-for-small-only">
+                  <img src="https://placeimg.com/50/50/nature">
+                </div>
+                <p class="testimonial-slide-author-info">Fleas Witherspoon<br><i class="subheader">Cat World Inc.</i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!--content slide 2 -->
+
+    <li class="orbit-slide">
+      <div class="testimonial-slide row">
+        <div class="small-12 large-9 column">
+          <div class="row align-middle testimonial-slide-content">
+            <div class="small-12 medium-4 column hide-for-small-only profile-pic">
+              <img src="https://placeimg.com/300/300/architecture">
+            </div>
+            <div class="small-12 medium-8 column testimonial-slide-text">
+              <p class="testimonial-slide-quotation">Hide when guests come over instantly break out into full speed gallop across the house for no reason mrow touch water with paw then recoil in horror.</p>
+              <div class="testimonial-slide-author-container">
+                <div class="small-profile-pic show-for-small-only">
+                  <img src="https://placeimg.com/50/50/architecture">
+                </div>
+                <p class="testimonial-slide-author-info">Fleas Witherspoon<br><i class="subheader">Cat World Inc.</i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!-- content slide 3 -->
+
+    <li class="orbit-slide">
+      <div class="testimonial-slide row">
+        <div class="small-12 large-9 column">
+          <div class="row align-middle testimonial-slide-content">
+            <div class="small-12 medium-4 column hide-for-small-only profile-pic">
+              <img src="https://placeimg.com/300/300/animals">
+            </div>
+            <div class="small-12 medium-8 column testimonial-slide-text">
+              <p class="testimonial-slide-quotation">Hide when guests come over instantly break out into full speed gallop across the house for no reason mrow touch water with paw then recoil in horror.</p>
+              <div class="testimonial-slide-author-container">
+                <div class="small-profile-pic show-for-small-only">
+                  <img src="https://placeimg.com/50/50/animals">
+                </div>
+                <p class="testimonial-slide-author-info">Fleas Witherspoon<br><i class="subheader">Cat World Inc.</i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!-- content slide 4 -->
+
+    <li class="orbit-slide">
+      <div class="testimonial-slide row">
+        <div class="small-12 large-9 column">
+          <div class="row align-middle testimonial-slide-content">
+            <div class="small-12 medium-4 column hide-for-small-only profile-pic">
+              <img src="https://placeimg.com/300/300/any">
+            </div>
+            <div class="small-12 medium-8 column testimonial-slide-text">
+              <p class="testimonial-slide-quotation">Hide when guests come over instantly break out into full speed gallop across the house for no reason mrow touch water with paw then recoil in horror.</p>
+              <div class="testimonial-slide-author-container">
+                <div class="small-profile-pic show-for-small-only">
+                  <img src="https://placeimg.com/50/50/any">
+                </div>
+                <p class="testimonial-slide-author-info">Fleas Witherspoon<br><i class="subheader">Cat World Inc.</i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+<!-- slider close -->
 
     <div class="espacio"></div>
 
